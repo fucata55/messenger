@@ -1,7 +1,7 @@
-export class ChatRoomMaster {
-	rooms
-
-	constructor() {}
+class ChatRoomMaster {
+	constructor() {
+		this.rooms = []
+	}
 
 	handleChat() {}
 
@@ -9,3 +9,5 @@ export class ChatRoomMaster {
 
 	get() {}
 }
+
+module.exports = ChatRoomMaster

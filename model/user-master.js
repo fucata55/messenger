@@ -1,9 +1,11 @@
-export class UserMaster {
-	users
-
-	constructor() {}
+class UserMaster {
+	constructor() {
+		this.users = []
+	}
 
 	create() {}
 
 	get() {}
 }
+
+module.exports = UserMaster
