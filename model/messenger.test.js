@@ -6,19 +6,11 @@ const chai = require('chai')
 const assert = chai.assert
 
 describe('Messenger', () => {
-	describe('contructor', () => {
-		it('should instantiate Messenger', () => {
-			const subject = new Messenger()
-			assert.instanceOf(
-				subject.chatRoomMaster,
-				ChatRoomMaster,
-				'Messenger.chatRoomMaster should be instantiated as ChatRoomMaster'
-			)
-			assert.instanceOf(
-				subject.userMaster,
-				UserMaster,
-				'Messenger.userMaster should be instantiated as UserMaster'
-			)
-		})
-	})
+    describe('contructor', () => {
+        it('should instantiate Messenger', () => {
+            const subject = new Messenger()
+            assert.instanceOf(subject.chatRoomMaster, ChatRoomMaster, 'chatRoomMaster should be ChatRoomMaster instance')
+            assert.instanceOf(subject.userMaster, UserMaster, 'userMaster should be UserMaster instance')
+        })
+    })
 })
